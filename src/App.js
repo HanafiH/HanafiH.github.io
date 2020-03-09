@@ -8,15 +8,28 @@ import { Container, Card, Button, CardTitle, CardText, Row, Col} from 'reactstra
 const cardData = [
   {
     nama : "Hanan",
-    job : "Front End"
+    job : "Project Manajer",
+    color : "primary"
   },
   {
-    nama : "Hanan",
-    job : "Front End"
+    nama : "Hanafi",
+    job : "Front End",
+    color : "warning"
   },
   {
-    nama : "Hanan",
-    job : "Front End"
+    nama : "Hanan Hanafi",
+    job : "Back End",
+    color : "danger"
+  },
+  {
+    nama : "Bambang",
+    job : "System Analyst",
+    color : "info"
+  },
+  {
+    nama : "Pamungkas",
+    job : "UI/UX Designer",
+    color : "success"
   },
 ]
 
@@ -35,13 +48,12 @@ class App extends React.Component {
       <Container>
 
       <Row>
-        <Col  sm={{ size:6, offset:3 }}>
+        <Col  sm={{ size:4, offset:4 }}>
           {
             cardData.map(data=>
-            <Card body style={{ backgroundColor: '#333', borderColor: '#333', color:'white', margin:'10px' }}>
+            <Card body color={data.color} style={{ borderColor: '#333', color:'white', margin:'10px' }}>
               <CardTitle>{data.nama}</CardTitle>
               <CardText>{data.job}</CardText>
-              <Button>Go somewhere</Button>
             </Card>
             )
           }
