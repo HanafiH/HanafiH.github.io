@@ -15,7 +15,7 @@ const Profile = (props) => {
 
             </div>
             <div className="row">
-                <div className="col-12 col-md-6 my-auto">
+                <div className="col-12 col-md-6 my-auto" >
                     <img src={image1} className="img-fluid w-75" alt=""/>
 
                 </div>
