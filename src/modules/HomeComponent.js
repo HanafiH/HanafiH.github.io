@@ -3,6 +3,7 @@ import Navbar from '../common/layouts/Navbar';
 import Profile from '../common/component/Profile';
 import Portfolio from '../common/component/Portfolio';
 import Contact from '../common/component/Contact';
+import About from '../common/component/About';
 
 class HomeComponent extends React.Component{
 
@@ -10,11 +11,23 @@ class HomeComponent extends React.Component{
         const {initialData,pageChangeToProfile,pageChangeToPortfolio,pageChangeToContact} = this.props;
 
         return (
-            <div style={{boxSizing:"content-box"}} className="p-3 text-white bg-grad h-75 w-75 mx-auto rounded shadow">
+            <div style={{boxSizing:"content-box",backgroundColor:"White"}} className="  text-white bg-grad h-75 w-75 mx-auto rounded shadow">
                 <Navbar pageChangeToProfile={pageChangeToProfile} pageChangeToPortfolio={pageChangeToPortfolio} pageChangeToContact={pageChangeToContact}/>
-                { initialData.page==1 &&  <Profile />}
-                { initialData.page==2 &&  <Portfolio/>}
-                { initialData.page==3 &&  <Contact/>}
+                <div className="container-fluid p-0 m-0 h-100">           
+                    <div className="row h-100">
+                        <div className="col-4 h-100">
+                            <Profile />
+                        </div>
+                        <div className="col">
+                        { initialData.page==1 &&  <About/>}
+                        { initialData.page==2 &&  <Portfolio/>}
+                        { initialData.page==3 &&  <Contact/>}
+                
+                        </div>
+                    </div>
+                </div>
+
+                
             </div>
         )
     }

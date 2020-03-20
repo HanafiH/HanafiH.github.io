@@ -1,33 +1,31 @@
 import React from 'react';
+import About from './About';
 
 
 const Profile = (props) => {
 
     console.log(props);
-    const image1 = require(`../../assets/images/profile-pic.png`);
+    const image1 = require(`../../assets/images/hanan-pic-1.png`);
 
-    return (<div className="container p-5 h-100 d-flex align-items-center">
-                    
-    <div className="row">
-        <div className="col">
-            <div className="row">
-            <h6 className="ml-auto">Profile</h6>
-
-            </div>
-            <div className="row">
-                <div className="col-12 col-md-6 my-auto" >
-                    <img src={image1} className="img-fluid w-75" alt=""/>
-
-                </div>
-                <div className="col-12 col-md-6 my-auto">
-                    <h1>Hanan Hanafi</h1>
-                    <p>My name is Hanan Hanafi. I was born in Jakarta on December 21, 2000. Now I live in Yogyakarta for a study at Gadjah Mada University, major in Computer and Information System. I am a self-starter and have a thirst for learning. I enthusiast with software development, especially in website and mobile.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    return (
     
-</div>)
+
+                <div className="row h-100 m-0 p-0 d-flex align-items-center">
+                    <div className="col d-flex align-items-center d-block h-50" style={{backgroundColor:"#f6d4b4"}}>
+                            <h1 className="">
+                            Hello<span style={{color:"blue",fontSize:"56px"}}>.</span> <br/> 
+                            I am <br/>
+                            Hanafi<br></br>
+                            </h1>
+
+                    </div>
+                    <img src={image1} className="img-fluid h-100 position-absolute ml-auto" alt="" style={{right:0}}/>
+
+                    
+
+                </div>
+            
+    )
 }
 
 export default Profile;
