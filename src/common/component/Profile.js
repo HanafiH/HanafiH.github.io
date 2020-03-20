@@ -10,10 +10,10 @@ const Profile = (props) => {
     return (
     
 
-                <div className="row h-100 m-0 p-0 d-flex align-items-center">
-                    <div className="col d-flex align-items-center d-block h-50" style={{backgroundColor:"#f6d4b4"}}>
-                            <h1 className="">
-                            Hello<span style={{color:"blue",fontSize:"56px"}}>.</span> <br/> 
+                <div className="row h-100 m-0 p-0 d-flex align-items-center w-75">
+                    <div className="col d-flex align-items-center d-block h-50 " style={{backgroundColor:"#f6d4b4"}}>
+                            <h1 className="text-white" style={{fontSize:"56px"}}>
+                            Hello<span style={{color:"#000533",fontSize:"128px"}}>.</span> <br/> 
                             I am <br/>
                             Hanafi<br></br>
                             </h1>
