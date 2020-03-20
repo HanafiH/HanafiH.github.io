@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = (props) => {
 
-    console.log(props);
+    // console.log(props);
 
     return (
         <div className="row h-100 m-0 p-0 d-flex align-items-center ">

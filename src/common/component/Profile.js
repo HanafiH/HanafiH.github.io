@@ -4,7 +4,7 @@ import About from './About';
 
 const Profile = (props) => {
 
-    console.log(props);
+    // console.log(props);
     const image1 = require(`../../assets/images/hanan-pic-1.png`);
 
     return (
@@ -17,6 +17,7 @@ const Profile = (props) => {
                             I am <br/>
                             Hanafi<br></br>
                             </h1>
+                            
 
                     </div>
                     <img src={image1} className="img-fluid h-100 position-absolute ml-auto" alt="" style={{right:0}}/>

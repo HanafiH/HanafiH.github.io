@@ -1,24 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 
-const PortfolioCard = (props) => {
-    const image1 = require(`../../assets/images/portfolio-bg-ted.png`);
+class PortfolioCard extends Component {
 
+    
 
-    console.log(props);
+    render(){
+    const data = this.props.data;
+    
+    const image = require('../../assets/images/'+ data.name +'.png');
+    // const {urlImage} = this.props
 
-    return (
-        <div>
+    console.log(this.props.data.name);
+
+        return (
+            <div>
         <div className="card" style={{width: ""}}>
-        <img src={image1} className="card-img-top" alt="..."/>
+        <img src={image} className="card-img-top" alt="..."/>
         <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <h5 className="card-title">{data.title}</h5>
+            <p className="card-text">{data.desc}</p>
+            <a href={data.link} className="btn btn-primary">Lihat</a>
         </div>
         </div>
         </div>
     )
+}
 }
 
 export default PortfolioCard;
