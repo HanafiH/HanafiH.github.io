@@ -1,4 +1,6 @@
 import React from 'react';
+import ModalEmail from './ModalEmail';
+import { Button } from 'reactstrap';
 
 
 const Contact = (props) => {
@@ -14,21 +16,32 @@ const Contact = (props) => {
                 <div style={{width:"56px",height:"10px",backgroundColor:""}}></div>
                 <div className="text-white">
                     <a className="text-white" href="https://www.instagram.com/hananhnfi">
-                    <div className="rounded p-2 my-2" style={{backgroundColor:"#C13584"}}>
-                        <h2>Instagram <i class="fab fa-instagram"></i></h2>
-                    </div></a>
-                    <div className="rounded p-2 my-2" style={{backgroundColor:"#25D366"}}>
-                        <h2>Whatsapp <i class="fab fa-whatsapp"></i></h2>
-                    </div>
-                    <div className="rounded p-2 my-2 " style={{backgroundColor:"#211F1F"}}>
-                        <h2>Github <i class="fab fa-github"></i></h2>
-                    </div>
-                    <div className="rounded p-2 my-2" style={{backgroundColor:"#0072b1"}}>
-                        <h2>Linkedin <i class="fab fa-linkedin"></i></h2>
-                    </div>
-                    <div className="rounded p-2 my-2" style={{backgroundColor:"#B23121"}}>
-                        <h2>Email <i class="fas fa-envelope"></i></h2>
-                    </div>
+                        <Button className="rounded p-2 my-2" style={{backgroundColor:"#C13584"}}>
+                            <h2>Instagram <i class="fab fa-instagram"></i></h2>
+                        </Button>
+                    </a>
+                    <br/>
+                    <a href="https://api.whatsapp.com/send?phone=6281319696990">
+                        <Button className="rounded p-2 my-2" style={{backgroundColor:"#25D366"}}>
+                            <h2>Whatsapp <i class="fab fa-whatsapp"></i></h2>
+                        </Button>
+                    </a>
+                    <br/>
+
+                    <a href="https://github.com/HanafiH">
+                        <Button className="rounded p-2 my-2 " style={{backgroundColor:"#211F1F"}}>
+                            <h2>Github <i class="fab fa-github"></i></h2>
+                        </Button>
+                    </a>
+                    <br/>
+
+                    <a href="https://www.linkedin.com/in/hanan-hanafi-702897174/">
+                        <Button className="rounded p-2 my-2" style={{backgroundColor:"#0072b1"}}>
+                            <h2>Linkedin <i class="fab fa-linkedin"></i></h2>
+                        </Button>
+                    </a>
+                    <ModalEmail buttonLabel="Kirim email " className=""></ModalEmail>
+                    
                 </div>
                 
                     

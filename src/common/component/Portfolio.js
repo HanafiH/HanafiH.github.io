@@ -10,7 +10,7 @@ class Portfolio extends React.Component {
             {
                 name : "potensiap",
                 title : "Website POTENSIAP",
-                link : "https://www.tedugm.com",
+                link : "http://www.potensiap.com",
                 desc : "Ted UGM adalah acara tahunan dari Departemen Teknik Elektro dan Informatika Sekolah Vokasi Universitas Gadjah Mada. Saya tergabung sebagai IT Support yang menhandle website terutama merealisasikan design User Interface Webstie dengan HTML, CSS, dan Javascript."
             },
             {
@@ -22,7 +22,7 @@ class Portfolio extends React.Component {
             {
                 name : "bemkm",
                 title : "Website BEM KM UGM 2019",
-                link : "https://www.tedugm.com",
+                link : "https://www.bemkm.ugm.ac.id",
                 desc : "Ted UGM adalah acara tahunan dari Departemen Teknik Elektro dan Informatika Sekolah Vokasi Universitas Gadjah Mada. Saya tergabung sebagai IT Support yang menhandle website terutama merealisasikan design User Interface Webstie dengan HTML, CSS, dan Javascript."
             }
         ]
