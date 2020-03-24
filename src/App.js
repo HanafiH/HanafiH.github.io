@@ -33,30 +33,14 @@ const cardData = [
   },
 ]
 
-
 class App extends React.Component {
 
   render() {
     return(
-    <div className="App">
-      
-      <Container>
+      <div className="App">
+        
+      </div>
 
-      <Row>
-        <Col  sm={{ size:4, offset:4 }}>
-          {
-            cardData.map(data=>
-            <Card body color={data.color} style={{ borderColor: '#333', color:'white', margin:'10px' }}>
-              <CardTitle>{data.nama}</CardTitle>
-              <CardText>{data.job}</CardText>
-            </Card>
-            )
-          }
-          
-        </Col>
-      </Row>
-    </Container>
-    </div>
 
     );}
     

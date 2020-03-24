@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Navbar from '../common/layouts/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../assets/css/home.css';
-import HomeComponent from '../modules/HomeComponent'
+import HomeComponent from '../modules/HomeComponent';
+
 
 
 class Home extends Component{

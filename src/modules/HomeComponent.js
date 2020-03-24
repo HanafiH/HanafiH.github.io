@@ -4,6 +4,7 @@ import Profile from '../common/component/Profile';
 import Portfolio from '../common/component/Portfolio';
 import Contact from '../common/component/Contact';
 import About from '../common/component/About';
+import Router from '../common/router/Router';
 
 class HomeComponent extends React.Component{
 
@@ -12,16 +13,25 @@ class HomeComponent extends React.Component{
 
         return (
             <div style={{boxSizing:"content-box",backgroundColor:"White"}} className=" bg-grad h-75 w-75 mx-auto rounded shadow">
-                <Navbar pageChangeToProfile={pageChangeToProfile} pageChangeToPortfolio={pageChangeToPortfolio} pageChangeToContact={pageChangeToContact}/>
+                {/* <Navbar pageChangeToProfile={pageChangeToProfile} pageChangeToPortfolio={pageChangeToPortfolio} pageChangeToContact={pageChangeToContact}/> */}
+
+                {/* Navbar dengan routing */}
+                <Navbar/>
+                
                 <div className="container-fluid p-0 m-0 h-100">           
                     <div className="row h-100">
                         <div className="col-12 col-md-5 h-100">
                             <Profile />
                         </div>
                         <div className="col-12 col-md-7">
-                        { initialData.page==1 &&  <About/>}
+                        
+                            {/* Routing */}
+                            <Router/>
+
+
+                        {/* { initialData.page==1 &&  <About/>}
                         { initialData.page==2 &&  <Portfolio/>}
-                        { initialData.page==3 &&  <Contact/>}
+                        { initialData.page==3 &&  <Contact/>} */}
                 
                         </div>
                     </div>
